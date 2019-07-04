@@ -10,7 +10,7 @@ public class Hello {
 		Scanner sc = new Scanner(System.in);
 		
 		int ad;
-		System.out.println("hello");
+		System.out.println("helloworld");
 		ad = sc.nextInt();
 		System.out.println(ad);
 	}
