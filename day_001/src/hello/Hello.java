@@ -14,6 +14,9 @@ public class Hello {
 		ad = sc.nextInt();
 		System.out.println(ad);
 		
+		// sysout +ctrl + spacebar
+		// shift + ctrl + 3 = staged 
+		
 	}
 
 }
