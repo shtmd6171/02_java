@@ -1,6 +1,7 @@
 package hello;
 
 import java.util.Scanner;
+import java.time.*;
 
 public class Hello {
 
@@ -9,7 +10,7 @@ public class Hello {
 		Scanner sc = new Scanner(System.in);
 		
 		int ad;
-		System.out.println("motherfucker");
+		System.out.println("hello");
 		ad = sc.nextInt();
 		System.out.println(ad);
 	}
