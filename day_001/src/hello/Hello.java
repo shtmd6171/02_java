@@ -13,6 +13,7 @@ public class Hello {
 		System.out.println("helloworld");
 		ad = sc.nextInt();
 		System.out.println(ad);
+		
 	}
 
 }
