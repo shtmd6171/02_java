@@ -1,6 +1,7 @@
 package hello;
 
 import java.util.Scanner;
+import java.util.*;
 import java.time.*;
 
 public class Hello {
@@ -9,11 +10,11 @@ public class Hello {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int ad;
-		System.out.println("helloworld");
-		ad = sc.nextInt();
-		System.out.println(ad);
-		
+		String line;
+		System.out.print("input : ");
+
+		line = sc.nextLine();
+		System.out.println(line.toUpperCase());
 		// sysout +ctrl + spacebar
 		// shift + ctrl + 3 = staged 
 		
