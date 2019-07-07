@@ -1,24 +1,37 @@
 package type.casting;
 
+/**
+ * 숫자형 데이터 사이에
+ * 형 변환(Type Casting)을 
+ * 테스트하는 클래스이다.
+ * 
+ * @author 304
+ *
+ */
 public class TypeCastingTest {
 
-	/*
-	 * 숫자형 데이터 사이에
-	 * 형 변환을 테스트하는 클래스
-	 */
-	
 	public static void main(String[] args) {
-		
+		// 1. 선언, 2. 초기화
 		double pi = 3.1415926535797;
-		int num = 100;
-		int result = num + (int)pi;
-		System.out.println("pi : "+pi);
-		System.out.println("num :"+num);
-		System.out.println("result :"+result);
+		int number = 100;
+		int result;
 		
-		byte buffer = (byte)result;
-		System.out.println("result :"+result);
-		System.out.println("byte :"+buffer);
+		// 3. 형 변환 : (타입이름) 피연산값;
+		result = number + (int) pi;
+		
+		// 4. 사용 : 값 출력
+		System.out.println("double pi=" + pi);
+		System.out.println("int number=" + number);
+		System.out.println("int result=" + result);
+		System.out.println("=================================");
+		
+		// 5. byte 타입으로 result 를 변환 저장
+		byte buffer = (byte) result;
+		System.out.println("int result=" + result);
+		System.out.println("byte buffer=" + buffer);
 	}
 
 }
+
+
+
