@@ -22,7 +22,7 @@ public class TotalNAverage {
 		} else {
 			average = (double) total / count;
 		}
-
+		System.out.println();
 		System.out.printf("총점 : %d | ", total);
 		System.out.printf("평균 : %5.2f%n ", average);
 
