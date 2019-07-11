@@ -1,4 +1,4 @@
-package array.basic;
+package array.multi;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class ArcheryScore {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[][] score = new int[3][9];
-		int[] sum = new int[3];
+		//int[] sum = new int[3];
 		int max = 0;
 		System.out.println("양궁 선수 점수 입력");
 		for (int idx = 0; idx < score.length; idx++) {

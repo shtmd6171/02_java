@@ -1,4 +1,4 @@
-package control.loop;
+package array.basic;
 
 public class SquareTable {
 
