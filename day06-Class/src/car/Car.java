@@ -16,6 +16,7 @@ package car;
 public class Car {
 	// 1. 멤버 변수 : 상태(현재 속도) 저장을 위한 선언
 	int velocity;
+	String nickname;
 	
 	// 2. 생성자 선언 : 초기화를 위한 선언
 	// 생략 가능
@@ -38,9 +39,15 @@ public class Car {
 		velocity = 0;
 	}
 	
-	// (3) 차의 상태(속도)를 알기 위한 출력
+	// (3) 차의 별명을 설정하는 기능 :
+	//	   nickname 필드에 값을 저장
+	public void setNickname(String carNickname) {
+		nickname = carNickname;
+	}
+		
+	// (4) 차의 상태(속도, 별명)를 알기 위한 출력
 	public void print() {
-		System.out.printf("이 차의 현재 속도: %d km/h \n",velocity);
+		System.out.printf("%s의 현재 속도: %d km/h \n",nickname,velocity);
 	}
 
 }

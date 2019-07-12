@@ -12,6 +12,14 @@ public class CarTest {
 		// 초기화
 		Car mycar = new Car(70);
 		
+		System.out.println("별명 붙이기 전");
+		mycar.print();
+		
+		
+		System.out.println("\n별명 붙인 후");
+		// 별명 붙이기
+		mycar.setNickname("붕붕이");
+		
 		// 사용 : car 라는 타입에 정의돈 메소드 호출
 		System.out.print("1. myCar의 초기화 후 속도\n");
 		mycar.print();
