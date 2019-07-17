@@ -33,7 +33,7 @@ public class MethodsTest {
 		}
 		System.out.println("\n배열의 합 : "+ sum + "\n");
 		
-		int avg = methods.avgOfArray(stage);
+		double avg = methods.avgOfArray(stage);
 		System.out.println("배열의 평균 : "+ avg + "\n");
 		
 		int add_sum = methods.adder(3, '+', 5);

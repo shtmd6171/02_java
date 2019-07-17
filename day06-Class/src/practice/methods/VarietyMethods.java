@@ -222,6 +222,9 @@ public class VarietyMethods {
 	
 	
 	
+	
+	
+	
 	/**
 	 * char 타입의 연산자와 두 개의 정수를 
 	 * 매개변수로 입력받아
