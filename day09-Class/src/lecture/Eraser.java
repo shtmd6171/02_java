@@ -33,6 +33,13 @@ public class Eraser {
 	Eraser() {
 
 	}
+	
+	Eraser(double width, double height, double depth, int layer) {
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
+		this.layer = layer;
+	}
 
 	Eraser(double width, double height, double depth, int layer, String color, String loc) {
 		this.width = width;
@@ -44,6 +51,7 @@ public class Eraser {
 		
 		// alt + shift + a 전체 편집
 	}
+	
 
 	public void erase() {
 		System.out.println("\n"+ loc + "지우개로 칠판을 지웠습니다");

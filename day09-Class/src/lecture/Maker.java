@@ -42,7 +42,7 @@ public class Maker {
 		} else {
 			System.out.println("뚜껑 닫힘");
 		}
-		System.out.printf("색상 : %s\n", color);
+		System.out.printf("색상 : %s\n\n", color);
 
 	}
 

@@ -27,17 +27,19 @@ public class Eraser {
 	double depth;
 	int layer;
 	String color;
+	String loc;
 
-	Eraser() {
+	public Eraser() {
 
 	}
 
-	Eraser(double width, double height, double depth, int layer, String color) {
+	public Eraser(double width, double height, double depth, int layer, String color, String loc) {
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
 		this.layer = layer;
 		this.color = color;
+		this.loc = loc;
 		
 		// alt + shift + a 전체 편집
 	}
