@@ -60,53 +60,133 @@ public class Book {
 	int  totalPage;
 	int price;
 	int quantity;
+	int amount;
+	
+	Book(){
+		
+	}
+	
+	Book(int sequence) {
+		this();
+		setSequence(sequence); // 쌉가능
+	}
+	
+	Book(int sequence, String isbn) {
+		this(sequence);
+		this.isbn = isbn;
+	}
+	
+	Book(int sequence, String isbn, String title) {
+		this(sequence, isbn);
+		this.title = title;
+	}
+	
+	Book(int sequence, String isbn, String title, String author) {
+		this(sequence,isbn,title);
+		this.author = author;
+	}
+	
+	Book(int sequence, String isbn, String title, String author, String company) {
+		this(sequence,isbn, title, author);
+		this.company = company;
+	}
+	
+	Book(int sequence,String isbn, String title, String author, String company,int totalPage) {
+		this(sequence, isbn, title, author, company);
+		this.totalPage  = totalPage;
+	}
+	
+	Book(int sequence,String isbn, String title, String author, String company,int totalPage, int price) {
+		this(sequence, isbn,title, author, company, totalPage);
+		this.price  = price;
+	}
+	
+	Book(int sequence,String isbn, String title, String author, String company,int totalPage, int price, int quantity) {
+		this(sequence, isbn, title, author, company, totalPage, price);
+		this.quantity  = quantity;
+	}
+	
+	public void print() {
+		System.out.println("일련번호 : "+ sequence);
+		System.out.println("ISBN : "+ isbn);
+		System.out.println("제목 : "+ title );
+		System.out.println("저자 : "+ author);
+		System.out.println("출판사 : "+ company);
+		System.out.println("페이지 수 : "+ totalPage);
+		System.out.println("가격 : "+ price);
+		System.out.println("재고수량 : "+ quantity);
+		System.out.println();
+	}
+	
+	public void buy(int amount) {
+		this.amount+=amount;
+	}
+	
+	public void sell(int amount) {
+		this.amount-=amount;
+	}
 	
 	
 	public int getSequence() {
 		return sequence;
 	}
+	
 	public void setSequence(int sequence) {
 		this.sequence = sequence;
 	}
+	
 	public String getIsbn() {
 		return isbn;
 	}
+	
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
+	
 	public String getTitle() {
 		return title;
 	}
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
 	public String getAuthor() {
 		return author;
 	}
+	
 	public void setAuthor(String author) {
 		this.author = author;
 	}
+	
 	public String getCompany() {
 		return company;
 	}
+	
 	public void setCompany(String company) {
 		this.company = company;
 	}
+	
 	public int getTotalPage() {
 		return totalPage;
 	}
+	
 	public void setTotalPage(int totalPage) {
 		this.totalPage = totalPage;
 	}
+	
 	public int getPrice() {
 		return price;
 	}
+	
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	
 	public int getQuantity() {
 		return quantity;
 	}
+	
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
