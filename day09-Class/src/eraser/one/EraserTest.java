@@ -7,6 +7,8 @@ public class EraserTest {
 		Eraser leftEraser = new Eraser();
 		Eraser rightEraser = new Eraser(3.5, 12.0, 5.5, 3, "검정", "빨강");
 
+		
+		Eraser rightEraser = new Eraser(3.5, 12.0, 5.5, 3, "검정");
 		leftEraser.print();
 		rightEraser.print();
 
