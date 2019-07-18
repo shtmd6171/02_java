@@ -1,4 +1,4 @@
-package Book;
+package book;
 
 /*
  * 책 한 권의 정보를 담는 클래스

@@ -1,4 +1,4 @@
-package Book;
+package book;
 
 /*
  * Book 여러개가 꼽혀있어
