@@ -1,4 +1,4 @@
-package lecture;
+package eraser;
 
 /*
  * 칠판 지우개를 정의하는 클래스
@@ -9,7 +9,6 @@ package lecture;
  * 높이 : depth  : double
  * 겹   : layer  : int
  * 색상 : color  : String
- * 위치 : loc    : String
  * -----------------------
  * 생성자 정의 : 중복정의
  * 기본생성자 명시
@@ -22,7 +21,12 @@ package lecture;
  */
 
 public class Eraser {
+	
+	// static 변수 int 타입의 count 선언하고 0초기화
+	static int count = 0;
 
+	// int 타입의 일렬번호 저장할 멤버변수 serial 선언
+	int serial;
 	double width;
 	double height;
 	double depth;
@@ -30,20 +34,12 @@ public class Eraser {
 	String color;
 	String loc;
 
-	Eraser() {
-
+	public Eraser() {
+		this.serial = ++count;
 	}
-	
-	Eraser(double width, double height, double depth, int layer) {
-		this.width = width;
-		this.height = height;
-		this.depth = depth;
-		this.layer = layer;
-	}
-	
-	
 
-	Eraser(double width, double height, double depth, int layer, String color, String loc) {
+	public Eraser(double width, double height, double depth, int layer, String color, String loc) {
+		this.serial = ++count;
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
@@ -53,10 +49,9 @@ public class Eraser {
 		
 		// alt + shift + a 전체 편집
 	}
-	
 
 	public void erase() {
-		System.out.println("\n"+ loc + "지우개로 칠판을 지웠습니다");
+		System.out.println("\n칠판을 지웠습니다");
 	}
 
 	public void peel() {
@@ -67,7 +62,7 @@ public class Eraser {
 	}
 
 	public void print() {
-		System.out.printf("\n가로 : %4.2f\n세로 : %4.2f\n높이 : %4.2f\n겹:%d\n색상:%s\n", width, height, depth, layer, color);
+		System.out.printf("\n번호 : %d\n가로 : %4.2f\n세로 : %4.2f\n높이 : %4.2f\n겹 : %d\n색상 : %s\n",serial, width, height, depth, layer, color);
 
 	}
 

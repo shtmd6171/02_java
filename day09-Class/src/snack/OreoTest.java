@@ -15,16 +15,13 @@ public class OreoTest {
 		}
 		
 
-		for(int count = 0; count <oreobox.length; count++) {
+		for(int count = 0; count < oreobox.length; count++) {
 		oreobox[count].changeCream ("바닐라");
 		}
 		
 		for(Oreo oreo : oreobox) {
 			oreo.print();
-		}
-		
-		
-		
+		}	
 
 	}
 
