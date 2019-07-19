@@ -18,7 +18,7 @@ public class BookShelf {
 	
 	public BookShelf(Book[] books){
 		this.books = books;	
-		System.out.println("초기에는 " + books.length+"\n"); // ★TEST★
+	
 	}
 	
 	// 책장에서 책을 추가 : add : void : 매개변수로 Book 1개를 받음
@@ -36,7 +36,7 @@ public class BookShelf {
 		//매개변수로 넘겨진 book은 마지막 새로 생긴 칸에 저장
 		newBooks[books.length] = book;
 		this.books = newBooks;
-		System.out.println("\n추가 후 " + newBooks.length +"\n"); // ★TEST★
+		
 	}
 	
 	// 책장에서 책을 제거 : void : remove(Book book)
@@ -82,13 +82,9 @@ public class BookShelf {
 		// (1)삭제할 책 앞쪽까지만 새 배열에 복사
 		
 		// 6. 남는 책이 복사된 새 배열을 this.book에 새로 저장
-		int sequnces =  0;
-		System.out.print("남은 책 일련번호 : ");
-		for (int count = 0; count < books.length; count++) { // ★TEST★
-			sequnces = books[count].getSequence();
-			System.out.print(sequnces+" ");
+
 		}
-	}
+
 	
 	
 	// 책 정보를 수정하기
@@ -108,7 +104,17 @@ public class BookShelf {
 		//책 1권의 정보를 리턴	
 		return findBook(book);
 	}
-	
+		
+	// 전체 책 목록 얻기 getAllbooks()
+	public Book[] getAllbooks() {
+		return this.books;
+	}
+		
+	/*
+	 * 매개변수 전달된 책 정보와
+	 * 일치하는 일련번호를 가진책 (책 배열 : books에 있는)을
+	 * 찾아서 배열 안에 들어있는 책을 리턴
+	 */
 	private Book findBook(Book book) {
 		Book findBook = null;
 		for (int idx = 0; idx < books.length; idx++) {
