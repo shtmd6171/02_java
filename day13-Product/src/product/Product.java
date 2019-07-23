@@ -99,8 +99,8 @@ public class Product {
 	
 	
 	public int discount(double percentage) {
-		double disc = (100 - percentage) / 100;
-		price = price * (int)disc;
+		double disc = (1.0 - percentage);
+		price = (int) (price * disc);
 		return price;
 	}
 
