@@ -27,7 +27,6 @@ public class Student extends Person {
 		// super() or this() 하나만 사용 가능
 		this.major = major;
 	}
-	
 	//3. 메소드 선언부
 	// (1) toString() 재정의 : 학생에 맞도록
 	

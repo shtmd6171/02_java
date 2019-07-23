@@ -13,6 +13,10 @@ package school;
 public abstract class Person {
 	
 	//1. 멤버변수
+	
+	/*
+	 * 전체 필드
+	 */
 	private String id;
 	private String name;
 	private int age;
